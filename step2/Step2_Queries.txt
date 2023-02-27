@@ -1,0 +1,119 @@
+First Query
+- Request URL:  Search a course that nstructor that has Diaz as name
+    https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=Diaz&%24select=instructor
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/coursestable-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 2.7005684,
+      "instructor": "Eileen Diaz"
+    },
+    {
+      "@search.score": 2.7005684,
+      "instructor": "Eileen Diaz"
+    },
+    {
+      "@search.score": 2.7005684,
+      "instructor": "Eileen Diaz"
+    },
+    {
+      "@search.score": 2.7005684,
+      "instructor": "Eileen Diaz"
+    },
+    {
+      "@search.score": 2.7005684,
+      "instructor": "Eileen Diaz"
+    }
+  ]
+}
+
+----------------------------------------------------------------------------------------
+
+Second Query: Search a paper that title has information in the title
+- Request URL:
+https://cg-search-service.search.windows.net/indexes/library-index/docs?api-version=2021-04-30-Preview&search=information&%24select=metadata_title
+
+- Results:
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/library-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1.6186963,
+      "metadata_title": "A classification method for social information of sellers on social network"
+    },
+    {
+      "@search.score": 1.6159984,
+      "metadata_title": "Multi technique amalgamation for enhanced information identification with content based image data"
+    },
+    {
+      "@search.score": 0.053815432,
+      "metadata_title": "Mobile marketing recommendation method based on user location feedback"
+    },
+    {
+      "@search.score": 0.053441487,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 0.053281512,
+      "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions"
+    },
+    {
+      "@search.score": 0.052628823,
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter"
+    },
+    {
+      "@search.score": 0.052149713,
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+    },
+    {
+      "@search.score": 0.05201286,
+      "metadata_title": "QER: a new feature selection method for sentiment analysis"
+    },
+    {
+      "@search.score": 0.050902106,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 0.049620055,
+      "metadata_title": "Discriminated by an algorithm: a systematic review of discrimination and fairness by algorithmic decision-making in the context of HR recruitment and HR development"
+    },
+    {
+      "@search.score": 0.049620055,
+      "metadata_title": "Sentiment analysis and the complex natural language"
+    },
+    {
+      "@search.score": 0.048302107,
+      "metadata_title": "Big data stream analysis: a systematic literature review"
+    },
+    {
+      "@search.score": 0.046614036,
+      "metadata_title": "Augmented reality virtual glasses try-on technology based on iOS platform"
+    },
+    {
+      "@search.score": 0.045552593,
+      "metadata_title": "Mining aspects of customer’s review on the social network"
+    },
+    {
+      "@search.score": 0.044737328,
+      "metadata_title": "01-CVM0189.pdf"
+    },
+    {
+      "@search.score": 0.040077034,
+      "metadata_title": "Toward a testbed for evaluating computational trust models: experiments and analysis"
+    },
+    {
+      "@search.score": 0.03954845,
+      "metadata_title": "Technological advancements and opportunities in Neuromarketing: a systematic review"
+    },
+    {
+      "@search.score": 0.031298604,
+      "metadata_title": null
+    },
+    {
+      "@search.score": 0.02503182,
+      "metadata_title": "Local regression transfer learning with applications to users’ psychological characteristics prediction"
+    }
+  ]
+}
+

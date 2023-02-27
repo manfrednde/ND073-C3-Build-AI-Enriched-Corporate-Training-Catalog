@@ -1,0 +1,12 @@
+- Users can search Course Data by title, instructor, and description.
+- Users can filter Course Data by source, rating, instructor, and role.
+- Users can sort Course Data by duration, and rating.
+- Users can facet Course Data by source and role.
+- Users can facet Course Data by duration, and rating.
+- Users can facet Course Data by product, and level.
+- Users can facet the Curated Library for papers by creation date.
+- Users can search the Curated Library for articles by authors and language.
+- Users can filter the Curated Library for articles by authors and title.
+- Users can search the Curated Library for papers by publication name, publisher, and publication date.
+- Users Should be able to retrieve internal training.
+- Users should be able to retrieve the DOI (Digital Object Identifier) URL for the file.

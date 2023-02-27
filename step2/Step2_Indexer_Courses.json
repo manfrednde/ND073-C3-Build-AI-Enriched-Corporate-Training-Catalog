@@ -1,0 +1,40 @@
+{
+    "@odata.context": "https://cg-search-service.search.windows.net/$metadata#indexers/$entity",
+    "@odata.etag": "\"0x8DB177281CC30AB\"",
+    "name": "coursestable-indexer",
+    "description": "",
+    "dataSourceName": "coursestabledata",
+    "skillsetName": "coursestable-skillset",
+    "targetIndexName": "coursestable-index",
+    "disabled": null,
+    "schedule": null,
+    "parameters": {
+      "batchSize": null,
+      "maxFailedItems": 0,
+      "maxFailedItemsPerBatch": 0,
+      "base64EncodeKeys": null,
+      "configuration": {}
+    },
+    "fieldMappings": [
+      {
+        "sourceFieldName": "Key",
+        "targetFieldName": "Key",
+        "mappingFunction": {
+          "name": "base64Encode",
+          "parameters": null
+        }
+      }
+    ],
+    "outputFieldMappings": [
+      {
+        "sourceFieldName": "/document/instructor/people",
+        "targetFieldName": "people"
+      },
+      {
+        "sourceFieldName": "/document/instructor/keyphrases",
+        "targetFieldName": "keyphrases"
+      }
+    ],
+    "cache": null,
+    "encryptionKey": null
+  }

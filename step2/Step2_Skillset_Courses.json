@@ -1,0 +1,73 @@
+{
+    "@odata.context": "https://cg-search-service.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DB177272D205C4\"",
+    "name": "coursestable-skillset",
+    "description": "Skillset created from the portal. skillsetName: coursestable-skillset; contentField: instructor; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/instructor",
+        "categories": [
+          "Email",
+          "Organization",
+          "URL",
+          "Address",
+          "PersonType",
+          "Event",
+          "Quantity",
+          "Skill",
+          "DateTime",
+          "Location",
+          "PhoneNumber",
+          "Product",
+          "Person",
+          "IPAddress"
+        ],
+        "defaultLanguageCode": "en",
+        "minimumPrecision": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/instructor"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "persons",
+            "targetName": "people"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#2",
+        "description": null,
+        "context": "/document/instructor",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/instructor"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "keyphrases"
+          }
+        ]
+      }
+    ],
+    "cognitiveServices": {
+      "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+      "description": "/subscriptions/1d697ec8-0d3c-4a0f-b9b2-a422ba575a26/resourceGroups/rg-corporate-training-catalog/providers/Microsoft.CognitiveServices/accounts/cog-service-corp",
+      "key": "a6607f7d119a47bd88761e651aa9fabc"
+    },
+    "knowledgeStore": null,
+    "encryptionKey": null
+  }

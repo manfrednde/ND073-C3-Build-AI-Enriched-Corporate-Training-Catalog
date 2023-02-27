@@ -1,0 +1,1434 @@
+First Query : Searching for course with description that end with python and filter by average rating less than 5 and rating count greater than 100
+- Request URL:  
+https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=python&%24select=instructor%2C%20description%2C%20product%2C%20url&%24filter=(rating_average%20lt%205%20and%20rating_count%20gt%20100)
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/coursestable-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure-devops",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure-devops",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure-devops",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure-devops",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 10.6503105,
+      "description": "Implement a CI/CD pipeline for Python.",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/deploy-python/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 8.653481,
+      "description": "Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/python-flask-build-ai-web-app/?WT.mc_id=api_CatalogApi"
+    },
+    {
+      "@search.score": 8.653481,
+      "description": "Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI",
+      "instructor": "",
+      "product": "azure",
+      "url": "https://docs.microsoft.com/en-us/learn/modules/python-flask-build-ai-web-app/?WT.mc_id=api_CatalogApi"
+    }
+  ]
+}
+---------------------------------------------------
+
+Second Query: Searching for course with title that has azure and sort by ascending order
+- Request URL:  
+https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=Azure*&%24select=title%2C%20description%2C%20role%2C%20product%2C%20rating_count&%24orderby=rating_count%20asc
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/coursestable-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "developer",
+      "product": "azure",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "devops-engineer",
+      "product": "azure",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "administrator",
+      "product": "azure-devops",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "administrator",
+      "product": "azure",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "solution-architect",
+      "product": "azure",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "solution-architect",
+      "product": "azure-devops",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "developer",
+      "product": "azure-devops",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Provision databases in Azure Pipelines",
+      "description": "Provision databases in Azure Pipelines",
+      "role": "devops-engineer",
+      "product": "azure-devops",
+      "rating_count": 0
+    },
+    {
+      "@search.score": 2,
+      "title": "Set up cash flow forecasts using Azure AI in Dynamics 365 Business Central",
+      "description": "Do you want to know how to set up cash flow forecasts using Microsoft Azure AI? Cash flow forecasts can use Azure AI to include documents with a due date in the future, and this module explains how to set up this capability.",
+      "role": "business-user",
+      "product": "dynamics-business-central",
+      "rating_count": 10
+    },
+    {
+      "@search.score": 2,
+      "title": "Set up cash flow forecasts using Azure AI in Dynamics 365 Business Central",
+      "description": "Do you want to know how to set up cash flow forecasts using Microsoft Azure AI? Cash flow forecasts can use Azure AI to include documents with a due date in the future, and this module explains how to set up this capability.",
+      "role": "business-user",
+      "product": "dynamics-365",
+      "rating_count": 10
+    },
+    {
+      "@search.score": 2,
+      "title": "Set up cash flow forecasts using Azure AI in Dynamics 365 Business Central",
+      "description": "Do you want to know how to set up cash flow forecasts using Microsoft Azure AI? Cash flow forecasts can use Azure AI to include documents with a due date in the future, and this module explains how to set up this capability.",
+      "role": "functional-consultant",
+      "product": "dynamics-business-central",
+      "rating_count": 10
+    },
+    {
+      "@search.score": 2,
+      "title": "Set up cash flow forecasts using Azure AI in Dynamics 365 Business Central",
+      "description": "Do you want to know how to set up cash flow forecasts using Microsoft Azure AI? Cash flow forecasts can use Azure AI to include documents with a due date in the future, and this module explains how to set up this capability.",
+      "role": "functional-consultant",
+      "product": "dynamics-365",
+      "rating_count": 10
+    },
+    {
+      "@search.score": 2,
+      "title": "Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines",
+      "description": "Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.",
+      "role": "developer",
+      "product": "azure-pipelines",
+      "rating_count": 12
+    },
+    {
+      "@search.score": 2,
+      "title": "Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines",
+      "description": "Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.",
+      "role": "developer",
+      "product": "azure-app-service-web",
+      "rating_count": 12
+    },
+    {
+      "@search.score": 2,
+      "title": "Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines",
+      "description": "Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.",
+      "role": "developer",
+      "product": "azure",
+      "rating_count": 12
+    },
+    {
+      "@search.score": 2,
+      "title": "Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines",
+      "description": "Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.",
+      "role": "developer",
+      "product": "azure-app-service",
+      "rating_count": 12
+    },
+    {
+      "@search.score": 2,
+      "title": "Rapidly develop and deploy Java apps using GitHub Actions or Azure Pipelines",
+      "description": "Create a Terraform configuration, provision your Azure resources, and set up your project for continuous integration and continuous delivery (CI/CD) by using either GitHub Actions or Azure Pipelines.",
+      "role": "developer",
+      "product": "azure-database-mysql",
+      "rating_count": 12
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "solution-architect",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "student",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "developer",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "administrator",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "devops-engineer",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "maker",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "database-administrator",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 2,
+      "title": "Deploy ASP.NET web apps with Azure Pipelines",
+      "description": "Azure Pipelines help automate building, deploying, and maintaining your applications. While they support a wide range of platforms and programming languages, in this module you’ll focus on using them to implement ASP.NET apps on Azure App Service Web Apps with Azure SQL Database as their data store.",
+      "role": "functional-consultant",
+      "product": "azure",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 1,
+      "title": "Use Azure Pipelines for CI/CD with Business Central",
+      "description": "Do you want to know how to configure and set up an automated build process? In this module, you'll learn how to configure CI/CD with Business Central applications, how to create pipelines using YAML files, and set up a release process.",
+      "role": "developer",
+      "product": "dynamics-365",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 1,
+      "title": "Use Azure Pipelines for CI/CD with Business Central",
+      "description": "Do you want to know how to configure and set up an automated build process? In this module, you'll learn how to configure CI/CD with Business Central applications, how to create pipelines using YAML files, and set up a release process.",
+      "role": "developer",
+      "product": "dynamics-business-central",
+      "rating_count": 13
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "devops-engineer",
+      "product": "azure-devops",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "administrator",
+      "product": "azure",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "solution-architect",
+      "product": "azure",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "solution-architect",
+      "product": "azure-devops",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "administrator",
+      "product": "azure-devops",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "developer",
+      "product": "azure-devops",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "devops-engineer",
+      "product": "azure",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Automate Java container deployments with Azure Pipelines",
+      "description": "Implement a CI/CD pipeline for Java containers.",
+      "role": "developer",
+      "product": "azure",
+      "rating_count": 22
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "role": "developer",
+      "product": "azure",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "ai-engineer",
+      "product": "azure-container-instances",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "ai-engineer",
+      "product": "azure-cognitive-services",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "devops-engineer",
+      "product": "azure",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "administrator",
+      "product": "azure-cognitive-services",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "data-scientist",
+      "product": "azure-container-registry",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "solution-architect",
+      "product": "azure-container-instances",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "student",
+      "product": "azure-container-instances",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "role": "developer",
+      "product": "azure-speech-translation",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "administrator",
+      "product": "azure-container-registry",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "role": "developer",
+      "product": "hololens",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "developer",
+      "product": "azure-cognitive-services",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "role": "developer",
+      "product": "azure-cognitive-services",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "data-scientist",
+      "product": "azure",
+      "rating_count": 25
+    },
+    {
+      "@search.score": 1,
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "role": "student",
+      "product": "azure-cognitive-services",
+      "rating_count": 25
+    }
+  ],
+  "@odata.nextLink": "https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=Azure%2A&$select=title%2C%20description%2C%20role%2C%20product%2C%20rating_count&$orderby=rating_count%20asc&$skip=50"
+}
+----------------------------------------------------
+
+Third Query: search for "Create and manage Cognitive Services" and facet on title
+- Request URL:  
+https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=Create%20and%20manage%20Cognitive%20Services&facet=title
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/coursestable-index/$metadata#docs(*)",
+  "@search.facets": {
+    "title": [
+      {
+        "count": 28,
+        "value": "Create and manage Cognitive Services"
+      },
+      {
+        "count": 21,
+        "value": "Deploy a cloud-native ASP.NET Core microservice with GitHub Actions"
+      },
+      {
+        "count": 20,
+        "value": "Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)"
+      },
+      {
+        "count": 20,
+        "value": "Choose the best AI service for your needs"
+      },
+      {
+        "count": 14,
+        "value": "Investigate container for use with Cognitive Services"
+      },
+      {
+        "count": 12,
+        "value": "Azure Kubernetes Service deployment pipeline and GitHub Actions"
+      },
+      {
+        "count": 12,
+        "value": "Get started with Git and GitHub in Visual Studio"
+      },
+      {
+        "count": 12,
+        "value": "Manage database changes in Azure Pipelines"
+      },
+      {
+        "count": 12,
+        "value": "Manage your Language Understanding Intelligent Service (LUIS) Apps"
+      },
+      {
+        "count": 12,
+        "value": "Secure Cognitive Services"
+      }
+    ]
+  },
+  "value": [
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4wYzk3ZWIyZi03OTRkLTQzMmYtYTA0Mi00NzYxMThmMmI1MDg1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4xNDNkYzJjZS1hOGZiLTQ4ZGEtYjAwMS1iMjhkYzJmZTI1NmI1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4xNmZmZTJhMS0zMzQ0LTQ1YjctODczNi00ZjA3MGFlOWI1ZDk1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4yMDhmYzA0ZC0zM2VmLTRlMmYtYjA1Yi01MGQxZWZkM2JkOWY1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4yMTFmYTM2YS05ODI0LTRlNDUtYTNiMC05NDc2ZjRiNzU2YTg1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4yNTUwZjg3NS1hZGVhLTQyNDktOTIwNi1kZGUwYjZlYWE5MjY1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm4yZjlmYzE0OC1jMjJiLTQ2ZTItYWFiOS0zZTk5ODRlYmY2YWY1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "student",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm41OWViYjAxNC1mMGJiLTQwODgtYTlkZi0wZjgzMmVjM2M1YTU1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm41ZjM0Y2FmOS04Y2M4LTRkZDgtOGIwNy0zODQ2MGZlZmY0Njg1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm43MmRmZTk2MS0zZTRhLTQzODQtOTY0Yy1jYjMwZTQ1NjY0NDU1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm43NjUyZTFlMi1lYWExLTQ5MTctODE4ZS1hOTc2OGZkZjVlZjE1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "student",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm43Y2VmZGZlNS0xMjI0LTQ4YjItYTM1ZS00MzhkYTVhODE0YTg1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm43ZWVjNTRjMy0zZmZkLTQ0NTMtYWM1MC01Y2M2MTEwNzU3YzM1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm44MTE3OTY3Mi00NTkxLTQ4NTktYjZiMy0xMDA1NTQ5NDFhOTE1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm44NjU2NWFjNC1jYjdmLTRkZjAtYTA0MS00MmRhZmJiN2Y4YjE1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm44OTFkOGUyOC0xYTc3LTQ4YmEtYWZlNC04Mjk2MTVlMTc3ZTc1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm44OTVhNTc4Ny02YzFjLTQxYmItYmZiMC1iNGM4NDNhOWNhMjU1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "student",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm44ZTU3ZjIxMy0xNzE2LTRiZTEtOTRmNi05NGU5NjU4MmNlYWY1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "student",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm45MzVkODFkOS01NTA2LTQxYTItYjg1Zi1hZjA0MjEwMmI1YTI1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm45OTk3ODM3NS0wMjg3LTRiYjItODVlOS1kOTZiYTE2ZjZiNTQ1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5iM2M5YzMyMC02NTczLTRkNTktOTM1ZS1kMzgzYTYxOTI5NmM1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5iY2VlMmFlMC0zMzhiLTRjOWEtODY4NS01MDIzYTBkYzQzZmM1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5jMjc0MjVlYi0xNjgwLTQzZTUtYmJmZS01MmNjM2MwM2JjZjI1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5kMzE0YmM2Zi05MWRlLTQwMTAtYjhkNS0wZWJkZWI1ZWI0NjA1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure-container-registry",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5kYzIwZTI5Yy1jNzkxLTQxNmYtOTE3NS1iZWU1MGVkYzhjOTQ1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure-cognitive-services",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5lMWRhYzViZC0xNTBiLTRlYTYtOTU3OC1mMzVjZjliN2IzOTg1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5lNTMxZmJhYS0yMTUwLTQ3YjUtYTQ2Ni02NGE3M2VhOThjZWI1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure-container-instances",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 20.684977,
+      "Key": "bXMtbGVhcm5mMWNmOTcyNC1jOWZlLTRkNWMtOGM5OS02NDUyNzNjOGEzYjU1",
+      "source": "MS Learn",
+      "title": "Create and manage Cognitive Services",
+      "description": "Azure Cognitive Services enable developers to easily add cognitive features into their applications. Learn how to configure and manage these services for your AI application needs.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure",
+      "duration": 44,
+      "rating_count": 25,
+      "rating_average": 4.56,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-manage-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm4wYWE4NmU1ZC1lZGU5LTRiZDgtOGU2Yy02Y2VmNzliMDI2ODA1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm40ODZmMGI5OS1hODc5LTQ4ODMtYTlhZS1jZmE0OWViZWY0NTg1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-speech-translation",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm41YjM0NzljYy0wMDU0LTQ1OWItYjAxMC0wY2QzOTc4ZDgwYWM1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "hololens",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm42YmUxYWYyYy02NzQzLTRhMDEtOWY0ZS1jZDQ2NDM3ZTE5Mjc1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-cognitive-services",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm44ZGJlYzA4Zi1hYzVmLTQwZDgtYTYwMC01MWUxMzQ5Y2I2Zjc1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "mrtk",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm5jYWI0ZjU5Yi1kM2ZjLTQ1MTAtOGNkMS02ZDcxNGFmNWM5MDc1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "windows-mixed-reality",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 12.459682,
+      "Key": "bXMtbGVhcm5mNTk5NThjYS00OWQ5LTRjNjYtOTNlOC01OWEyODVmZjE0M2U1",
+      "source": "MS Learn",
+      "title": "Create a language translator application with Unity and Azure Cognitive Services",
+      "description": "Create a language translator application for your mixed reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-speech",
+      "duration": 70,
+      "rating_count": 25,
+      "rating_average": 4.6,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm4xOTZhYjhlZC1iOTU1LTQ1ZGUtYmMzYy00NjY0NzYwYjBlOTc1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm4xZGJkODA2Mi1jNWVhLTQ1ZDUtOWYzZS1mOGEwMTNmOTYzYTY1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm4yNjM3N2QxNy05YjExLTQ1NjUtYTU1My04YWE3MTU3NjQ1MDI1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm4yZjkwYzYwMS05Nzk0LTQwZDctYWFmYS1jZWQzZDdiYWI4MDE1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm4zYmRjZjU1NS1iOWIzLTRlMzctYTM4ZS05NTQ2Y2JkOTQzYjk1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "data-scientist",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm40ODU5OTZkNS0xOWQ0LTQ1MDEtYjc0NC05ZGFmNWJmNWIwNDk1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm42NjFiMDEyNS05YTZiLTRjNDItYTczZS01Y2JmZTZmYTJmNTc1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "student",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm42ZDc1NGVjYy1mNzEwLTQyNTAtOWExOS01YzE0OWZiOTFhOGI1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm45M2IzYjEyNi0wZjkyLTQ1MWItODJhNi04ZWVmZTIyYmE4ZGY1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm45YzQ4ODhlMS1iNjVjLTQzODgtYTU1Yi00OGU2MGI2N2NmYTc1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "administrator",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm5iZjdhZjYyOC1hZTBlLTQyMTAtYjQ3ZS1jNGU0MDkwYTVmYmU1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "solution-architect",
+      "product": "azure",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm5jMTI2NWY5Zi0zMDg3LTQ3ZWMtYjk0OS02MTg5ZTgxNTg4NGQ1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "devops-engineer",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm5lY2ZkYWE5MS00M2M4LTQ1NzItYTNmOS1iZTM2YTUwNjkyZmE1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "student",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 11.423673,
+      "Key": "bXMtbGVhcm5mN2M4YjY2NS1jOTlmLTRjOTMtODhiMS1mNTc4M2ZhYjYyMmY1",
+      "source": "MS Learn",
+      "title": "Investigate container for use with Cognitive Services",
+      "description": "Investigate container for use with Cognitive Services",
+      "instructor": "",
+      "role": "developer",
+      "product": "azure-container-instances",
+      "duration": 46,
+      "rating_count": 17,
+      "rating_average": 4.71,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/investigate-container-for-use-cognitive-services/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    },
+    {
+      "@search.score": 10.808707,
+      "Key": "bXMtbGVhcm4xM2Y0NDJiMC1mMWQxLTQ0MDItOGMzZS0xM2YwYzhiNmNlOGQ1",
+      "source": "MS Learn",
+      "title": "Create an Azure Cognitive Search solution",
+      "description": "Create an Azure Cognitive Search solution",
+      "instructor": "",
+      "role": "ai-engineer",
+      "product": "azure-cognitive-search",
+      "duration": 63,
+      "rating_count": 45,
+      "rating_average": 4.91,
+      "url": "https://docs.microsoft.com/en-us/learn/modules/create-azure-cognitive-search-solution/?WT.mc_id=api_CatalogApi",
+      "people": [],
+      "keyphrases": []
+    }
+  ],
+  "@odata.nextLink": "https://cg-search-service.search.windows.net/indexes/coursestable-index/docs?api-version=2021-04-30-Preview&search=Create%20and%20manage%20Cognitive%20Services&facet=title&$skip=50"
+}
+----------------------------------------------------
+
+Fourth Query: Search for a paper that has big and review in the title
+- Request URL: 
+https://cg-search-service.search.windows.net/indexes/library-index/docs?api-version=2021-04-30-Preview&search=big%2Breview&%24select=metadata_title 
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/library-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 5.1721416,
+      "metadata_title": "Big data stream analysis: a systematic literature review"
+    },
+    {
+      "@search.score": 3.5017135,
+      "metadata_title": "Privacy preservation techniques in big data analytics: a survey"
+    },
+    {
+      "@search.score": 3.1810899,
+      "metadata_title": "Mining aspects of customer’s review on the social network"
+    },
+    {
+      "@search.score": 2.5012305,
+      "metadata_title": "Technological advancements and opportunities in Neuromarketing: a systematic review"
+    },
+    {
+      "@search.score": 1.8932378,
+      "metadata_title": "Improving prediction with enhanced Distributed Memory-based Resilient Dataset Filter"
+    },
+    {
+      "@search.score": 1.6610295,
+      "metadata_title": "Context-aware rule learning from smartphone data: survey, challenges and future directions"
+    },
+    {
+      "@search.score": 1.3340566,
+      "metadata_title": "QER: a new feature selection method for sentiment analysis"
+    },
+    {
+      "@search.score": 1.141645,
+      "metadata_title": "Sentiment analysis and the complex natural language"
+    }
+  ]
+}
+----------------------------------------------------
+
+Fifth Query: Search for a paper that has author as Taiwo Kolajo
+- Request URL:  
+https://cg-search-service.search.windows.net/indexes/library-index/docs?api-version=2021-04-30-Preview&search=*&%24filter=metadata_author%20eq%20%27Taiwo%20Kolajo%20%27
+- Results: 
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/indexes/library-index/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "content": "\nBig data stream analysis: a systematic \nliterature review\nTaiwo Kolajo1,2* , Olawande Daramola3  and Ayodele Adebiyi1,4 \n\nIntroduction\nAdvances in information technology have facilitated large volume, high-velocity of data, \nand the ability to store data continuously leading to several computational challenges. \nDue to the nature of big data in terms of volume, velocity, variety, variability, veracity, \nvolatility, and value [1] that are being generated recently, big data computing is a new \ntrend for future computing.\n\nBig data computing can be generally categorized into two types based on the process-\ning requirements, which are big data batch computing and big data stream computing \n\nAbstract \n\nRecently, big data streams have become ubiquitous due to the fact that a number of \napplications generate a huge amount of data at a great velocity. This made it difficult \nfor existing data mining tools, technologies, methods, and techniques to be applied \ndirectly on big data streams due to the inherent dynamic characteristics of big data. In \nthis paper, a systematic review of big data streams analysis which employed a rigorous \nand methodical approach to look at the trends of big data stream tools and technolo-\ngies as well as methods and techniques employed in analysing big data streams. It \nprovides a global view of big data stream tools and technologies and its comparisons. \nThree major databases, Scopus, ScienceDirect and EBSCO, which indexes journals and \nconferences that are promoted by entities such as IEEE, ACM, SpringerLink, and Elsevier \nwere explored as data sources. Out of the initial 2295 papers that resulted from the \nfirst search string, 47 papers were found to be relevant to our research questions after \nimplementing the inclusion and exclusion criteria. The study found that scalability, \nprivacy and load balancing issues as well as empirical analysis of big data streams and \ntechnologies are still open for further research efforts. We also found that although, sig-\nnificant research efforts have been directed to real-time analysis of big data stream not \nmuch attention has been given to the preprocessing stage of big data streams. Only a \nfew big data streaming tools and technologies can do all of the batch, streaming, and \niterative jobs; there seems to be no big data tool and technology that offers all the key \nfeatures required for now and standard benchmark dataset for big data streaming ana-\nlytics has not been widely adopted. In conclusion, it was recommended that research \nefforts should be geared towards developing scalable frameworks and algorithms that \nwill accommodate data stream computing mode, effective resource allocation strategy \nand parallelization issues to cope with the ever-growing size and complexity of data.\n\nKeywords: Big data stream analysis, Stream computing, Big data streaming tools and \ntechnologies\n\nOpen Access\n\n© The Author(s) 2019. This article is distributed under the terms of the Creative Commons Attribution 4.0 International License \n(http://creat iveco mmons .org/licen ses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium, \nprovided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and \nindicate if changes were made.\n\nSURVEY PAPER\n\nKolajo et al. J Big Data            (2019) 6:47  \nhttps://doi.org/10.1186/s40537-019-0210-7\n\n*Correspondence:   \ntaiwo.kolajo@stu.cu.edu.ng; \ntaiwo.kolajo@fulokoja.edu.ng \n1 Department of Computer \nand Information Sciences, \nCovenant University, Ota, \nNigeria\nFull list of author information \nis available at the end of the \narticle\n\nhttp://orcid.org/0000-0001-6780-2495\nhttp://orcid.org/0000-0001-6340-078X\nhttp://orcid.org/0000-0002-3114-6315\nhttp://creativecommons.org/licenses/by/4.0/\nhttp://crossmark.crossref.org/dialog/?doi=10.1186/s40537-019-0210-7&domain=pdf\n\n\nPage 2 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\n[2]. Big data batch processing is not sufficient when it comes to analysing real-time \napplication scenarios. Most of the data generated in a real-time data stream need real-\ntime data analysis. In addition, the output must be generated with low-latency and any \nincoming data must be reflected in the newly generated output within seconds. This \nnecessitates big data stream analysis [3].\n\nThe demand for stream processing is increasing. The reason being not only that huge \nvolume of data need to be processed but that data must be speedily processed so that \norganisations or businesses can react to changing conditions in real-time.\n\nThis paper presents a systematic review of big data stream analysis. The purpose is to \npresent an overview of research works, findings, as well as implications for research and \npractice. This is necessary to (1) provide an update about the state of research, (2) iden-\ntify areas that are well researched, (3) showcase areas that are lacking and need further \nresearch, and (4) build a common understanding of the challenges that exist for the ben-\nefit of the scientific community.\n\nThe rest of the paper is organized as follows: “Background and related work” section \nprovides information on stream computing and big data stream analysis and the key \nissues involved in it and presents a review on big data streaming analytics. In “Research \nmethod” section, the adopted research methodology is discussed, while “Result” section \npresents the findings of the study. “Discussion” section presents a detailed evaluation \nperformed on big data stream analysis, “Limitation of the review” section highlights the \nlimitations of the study, while “Conclusion and further work” concludes the paper.\n\nBackground and related work\nStream computing\n\nStream computing refers to the processing of massive amount of data generated at high-\nvelocity from multiple sources with low latency in real-time. It is a new paradigm neces-\nsitated because of new sources of data generating scenarios which include ubiquity of \nlocation services, mobile devices, and sensor pervasiveness [4]. It can be applied to the \nhigh-velocity flow of data from real-time sources such as the Internet of Things, Sensors, \nmarket data, mobile, and clickstream.\n\nThe fundamental assumption of this paradigm is that the potential value of data lies in \nits freshness. As a result, data are analysed as soon as they arrive in a stream to produce \nresult as opposed to what obtains in batch computing where data are first stored before \nthey are analysed. There is a crucial need for parallel architectures and scalable com-\nputing platforms [5]. With stream computing, organisations can analyse and respond in \nreal-time to rapidly changing data. Streaming processing frameworks include Storm, S4, \nKafka, and Spark [6–8]. The real contrasts between the batch processing and the stream \nprocessing paradigms are outlined in Table 1.\n\nIncorporating streaming data into decision-making process necessitates a program-\nming paradigm called stream computing. With stream computing, fairly static questions \ncan be evaluated on data in motion (i.e. real-time data) continuously [9].\n\nBig data stream analysis\n\nThe essence of big data streaming analytics is the need to analyse and respond to real-\ntime streaming data using continuous queries so that it is possible to continuously \n\n\n\nPage 3 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nperform analysis on the fly within the stream. Stream processing solutions must be \nable to handle a real-time, high volume of data from diverse sources putting into con-\nsideration availability, scalability and fault tolerance. Big data stream analysis involves \nassimilation of data as an infinite tuple, analysis and production of actionable results \nusually in a form of stream [10].\n\nIn a stream processor, applications are represented as data flow graph made up of \noperations and interconnected streams as depicted in Fig. 1. In a streaming analytics \nsystem, application comes in a form of continuous queries, data are ingested continu-\nously, analysed and correlated, and stream of results are generated. Streaming analytic \napplications is usually a set of operators connected by streams. Streaming analytics \nsystems must be able to identify new information, incrementally build models and \naccess whether the new incoming data deviate from model predictions [9].\n\nThe idea of streaming analytics is that each of the received data tuples is processed \nin the data processing node. Such processing includes removing duplicates, filling \nmissing data, data normalization, parsing, feature extraction, which are typically done \nin a single pass due to the high data rates of external feeds. When a new tuple arrives, \nthis node is triggered, and it expels tuples older than the time specified in the sliding \nwindow (sliding window is a typical example of windows used in stream computing \nwhich keeps only the latest tuples up to the time specified in the windows). A window \n\nTable 1 Comparison between batch processing and streaming processing [82]\n\nDimension Batch processing Streaming processing\n\nInput Data chunks Stream of new data or updates\n\nData size Known and finite Infinite or unknown in advance\n\nHardware Multiple CPUs Typical single limited amount of memory\n\nStorage Store Not store or store non-trivial portion in memory\n\nProcessing Processed in multiple rounds A single or few passes over data\n\nTime Much longer A few seconds or even milliseconds\n\nApplications Widely adopted in almost every domain Web mining, traffic monitoring, sensor networks\n\nFig. 1 Data flow graph of a stream processor. The figure shows how applications (made up of operations and \ninterconnected streams) are represented as data flow graph in a stream processor [10]\n\n\n\nPage 4 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nis referred to as a logical container for data tuples received. It defines how frequently \ndata is refreshed in the container as well as when data processing is triggered [4].\n\nKey issues in big data stream analysis\n\nBig data stream analysis is relevant when there is a need to obtain useful knowledge \nfrom current happenings in an efficient and speedy manner in order to enable organisa-\ntions to quickly react to problems, or detect new trends which can help improve their \nperformance. However, there are some challenges such as scalability, integration, fault-\ntolerance, timeliness, consistency, heterogeneity and incompleteness, load balancing, \nprivacy issues, and accuracy [3, 11–18] which arises from the nature of big data streams \nthat must be dealt with.\n\nScalability\n\nOne of the main challenges in big data streaming analysis is the issue of scalability. The \nbig data stream is experiencing exponential growth in a way much faster than computer \nresources. The processors follow Moore’s law, but the size of data is exploding. There-\nfore, research efforts should be geared towards developing scalable frameworks and \nalgorithms that will accommodate data stream computing mode, effective resource allo-\ncation strategy and parallelization issues to cope with the ever-growing size and com-\nplexity of data.\n\nIntegration\n\nBuilding a distributed system where each node has a view of the data flow, that is, every \nnode performing analysis with a small number of sources, then aggregating these views \nto build a global view is non-trivial. An integration technique should be designed to ena-\nble efficient operations across different datasets.\n\nFault‑tolerance\n\nHigh fault-tolerance is required in life-critical systems. As data is real-time and infinite \nin big data stream computing environments, a good scalable high fault-tolerance strat-\negy is required that allows an application to continue working despite component failure \nwithout interruption.\n\nTimeliness\n\nTime is of the essence for time-sensitive processes such as mitigating security threats, \nthwarting fraud, or responding to a natural disaster. There is a need for scalable architec-\ntures or platforms that will enable continuous processing of data streams which can be \nused to maximize the timeliness of data. The main challenge is implementing a distrib-\nuted architecture that will aggregate local views of data into global view with minimal \nlatency between communicating nodes.\n\nConsistency\n\nAchieving high consistency (i.e. stability) in big data stream computing environments is \nnon-trivial as it is difficult to determine which data are needed and which nodes should \nbe consistent. Hence a good system structure is required.\n\n\n\nPage 5 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nHeterogeneity and incompleteness\n\nBig data streams are heterogeneous in structure, organisations, semantics, accessi-\nbility and granularity. The challenge here is how to handle an always ever-increas-\ning data, extract meaningful content out of it, aggregate and correlate streaming \ndata from multiple sources in real-time. A competent data presentation should be \ndesigned to reflect the structure, diversity and hierarchy of the streaming data.\n\nLoad balancing\n\nA big data stream computing system is expected to be self-adaptive to data streams \nchanges and avoid load shedding. This is challenging as dedicating resources to cover \npeak loads 24/7 is impossible and load shedding is not feasible when the variance \nbetween the average load and the peak load is high. As a result, a distributing envi-\nronment that automatically streams partial data streams to a global centre when local \nresources become insufficient is required.\n\nHigh throughput\n\nDecision with respect to identifying the sub-graph that needs replication, how many \nreplicas are needed and the portion of the data stream to assign to each replica is an \nissue in big data stream computing environment. There is a need for good multiple \ninstances replication if high throughput is to be achieved.\n\nPrivacy\n\nBig data stream analytics created opportunities for analyzing a huge amount of data \nin real-time but also created a big threat to individual privacy. According to the Inter-\nnational Data Cooperation (IDC), not more than half of the entire information that \nneeds protection is effectively protected. The main challenge is proposing techniques \nfor protecting a big data stream dataset before its analysis.\n\nAccuracy\n\nOne of the main objectives of big data stream analysis is to develop effective tech-\nniques that can accurately predict future observations. However, as a result of inher-\nent characteristics of big data such as volume, velocity, variety, variability, veracity, \nvolatility, and value, big data analysis strongly constrain processing algorithms spatio-\ntemporally and hence stream-specific requirements must be taken into consideration \nto ensure high accuracy.\n\nRelated work\n\nThis section discusses some of the previous research efforts that relate to big data \nstreaming analytics.\n\nThe work of [13] presented a review of various tools, technologies and methods \nfor big data analytics by categorizing big data analytics literature according to their \nresearch focus. This paper is different in that it presents a systematic literature review \nthat focused on big data “streaming” analytics.\n\n\n\nPage 6 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nAuthors in [19] presented a systematic review of big data analytics in e-commerce. The \nstudy explored characteristics, definitions, business values, types and challenges of big \ndata analytics in the e-commerce landscape. Likewise, [20] conducted a study that is cen-\ntred on big data analytics in technology and organisational resource management specifi-\ncally focusing on reviews that present big data challenges and big data analytics methods. \nAlthough they are systematic reviews, the focus is not, particularly on big data streaming.\n\nAuthors in [21] presented the status of empirical research and application areas in big \ndata by employing a systematic mapping method. In the same vein, authors in [22] also \nconducted a survey on big data technologies and machine learning algorithms with a \nparticular focus on anomaly detection. A systematic review of literature which aims to \ndetermine the scope, application, and challenges of big data analytics in healthcare was \npresented by [23]. The work of [2] presented a review of four big data streaming tools \nand technologies. While the study conducted in this paper provided a comprehensive \nreview of not only big data streaming tools and technologies but also methods and tech-\nniques employed in analyzing big data streams. In addition, authors [2] did not provide a \nclear explanation of the methodical approach for selecting the reviewed papers.\n\nResearch method\nThe study was grounded in a systematic literature review of tools and technologies \nwith methods and techniques used in analysing big data streams by adopting [24, 25] as \nmodels.\n\nResearch question\n\nThe study tries to answer the following research questions:\n\nResearch Question 1: What are the tools and technologies employed for big data \nstream analysis?\nResearch Question 2: What methods and techniques are used in analysing big data \nstreams?\nResearch Question 3: What do these tools and technologies have in common and \ntheir differences in terms of concept, purpose and capabilities?\nResearch Question 4: What are the limitations and strengths of these tools and tech-\nnologies?\nResearch Question 5: What are the evaluation techniques or benchmarks used for \nevaluating big data streaming tools and technology?\n\nSearch string\n\nCreating a good search string requires structuring in terms of population, compari-\nson, intervention and outcome [24]. Relevant publications were identified by forming \na search string that combined keywords driven by the research questions earlier stated. \nThe searches were conducted by employing three standard database indexes, which are \nScopus, Science Direct and EBSCOhost. The search string is “big data stream analysis” \nOR “big data stream technologies” OR “big data stream framework” OR “big data stream \nalgorithms” OR “big data stream analysis tools” OR “big data stream processing” OR “big \n\n\n\nPage 7 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\ndata stream analysis reviews” OR “big data stream literature review” OR “big data stream \nanalytics”.\n\nData sources\n\nAs research becomes increasingly interdisciplinary, global and collaborative, it is expedi-\nent to select from rich and standard databases. The databases consulted are as follows:\n\n i. Scopus1: Scopus is a bibliographic database containing abstracts and citations for \nacademic journal articles launched in 2004. It covers nearly 36,377 titles from over \n11,678 publishers of which 34,346 are peer-reviewed journals, delivering a compre-\nhensive overview of the world’s research output in the scientific, technical, medi-\ncal, and social sciences (including arts and humanities). It is the largest abstract \nand citation database of peer-reviewed literature.\n\n ii. ScienceDirect2: ScienceDirect is Elsevier’s leading information solution for \nresearchers, students, teachers, information professionals and healthcare profes-\nsionals. It provides both subscription-based and open access-based to a large data-\nbase combining authoritative, full-text scientific, technical and health publications \nwith smart intuitive functionality. It covers over 14 million publications from over \n3800 journals and more than 35,000 books. The journals are grouped into four \ncategories: Life Sciences, Physical Sciences and Engineering, Health Sciences, and \nSocial Sciences and Humanities.\n\n iii. EBSCOhost3: EBSCOhost covers a wide range of bibliographic and full-text data-\nbases for researchers, providing electronic journal service available to both cor-\nporate and academic researchers. It has a total of 16,711 journals and magazine \nindexed and abstracted of which 14,914 are peer-reviewed; more than 900,000 \nhigh-quality e-books and titles and over 60,000 audiobooks from more than 1500 \nmajor academic publishers.\n\n iv. ResearchGate4: A free online professional network for scientists and researchers to \nask and answer questions, share papers and find collaborators. It covers over 100 \nmillion publications from over 11 million researchers. ResearchGate was used as \na secondary source where the authors could not access some papers due to lack of \nsubscription.\n\nData retrieval\n\nThe search was conducted in Scopus, ScienceDirect and EBSCOhost since most of \nthe high impact journals and conferences are indexed in these set of rich databases. \nBoolean ‘OR’ was used in combining the nine (9) search strings. A total of 2295 arti-\ncles from the three databases were retrieved as shown in Table 2.\n\n1 http://www.scopu s.com.\n2 http://www.scien cedir ect.com.\n3 https ://www.ebsco host.com.\n4 https ://www.resea archg ate.net.\n\nhttp://www.scopus.com\nhttp://www.sciencedirect.com\nhttps://www.ebscohost.com\nhttps://www.reseaarchgate.net\n\n\nPage 8 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nFurther refinement was performed by (i) limiting the search to journals and confer-\nence papers; (ii) selecting computer science and IT related as the subject domain; (iii) \nselecting ACM, IEEE, SpringerLink, Elsevier as sources; and year of publication to \nbetween 2004 and 2018. The year range was selected due to the fact that interest in \nbig data stream analysis actually started in 2004. At this stage, a total of 1989 papers \nwere excluded leaving a total of 315 papers (see Table  3). The result of the search \nstring was exported to PDF.\n\nBy going through the title of the papers, 111 seemingly relevant papers were extracted \nexcluding a total number of 213 that were not relevant at this stage (see Table 4).\n\nThe abstracts of 111 papers and introduction (for papers that the abstracts were not \nclear enough) were then read to have a quick overview of the paper and to ascertain \nwhether they are suitable or at variance with the research questions. The citations of \nthe papers were exported to Microsoft Excel for easy analysis. The papers were grouped \ninto three categories; “relevant”, “may be relevant” and “irrelevant”. The “relevant” papers \nwere marked with black colour, “may be relevant” and “irrelevant” with green and red \ncolours respectively. At the end of this stage, 45 papers were classified as “relevant”, 9 \npapers as “may be relevant” and 11 as “irrelevant”. Looking critically at the abstract again, \n18 papers were excluded by using the exclusion criteria leaving a total of 47 papers (see \nTable 5) which were manually reviewed in line with the research questions.\n\nInclusion criteria\n\nPapers published in journals, peer-reviewed conferences, workshops, technical and \nsymposium from 2004 and 2018 were included. In addition, the most recent papers \nwere selected in case of papers with similar investigations and results.\n\nTable 2 First search string result\n\nScopus ScienceDirect EBSCOhost Total\n\nNumber of papers 2097 65 133 2295\n\nTable 3 Second search string result\n\nScopus ScienceDirect EBSCOhost Total\n\nNumber of papers 196 27 92 315\n\nTable 4 Third Search string refinement result\n\nScopus ScienceDirect EBSCOhost Total\n\nNumber of papers 64 23 24 111\n\nTable 5 Final Selection\n\nScopus ScienceDirect EBSCOhost Total\n\nNumber of papers 25 10 12 47\n\n\n\nPage 9 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nExclusion criteria\n\nPapers that belong to the following categories were excluded from selection as part of \nthe primary study: (i) papers written in source language other than English; (ii) papers \nwith an abstract and or introduction that does not clearly define the contributions of the \nwork; (iii) papers whose abstract do not relate to big data stream analysis.\n\nResult\nThe findings of the study are now presented with respect to the research questions that \nguided the execution of the systematic literature review.\n\nResearch Question 1: What are the tools and technologies employed for big data stream \n\nanalysis?\n\nBig data stream platforms provide functionalities and features that enable big data \nstream applications to develop, operate, deploy, and manage big data streams. Such \nplatforms must be able to pull in streams of data, process the data and stream it back \nas a single flow. Several tools and technologies have been employed to analyse big data \nstreams. In response to the growing demand for big data streaming analytics, a large \nnumber of alternative big data streaming solutions have been developed both by the \nopen source community and enterprise technology vendors. According to [26], there are \nsome factors to consider when selecting big data streaming tools and technologies in \norder to make effective data management decisions. These are briefly described below.\n\nShape of the data\n\nStreaming data sources require serialization technologies for capturing, storing and rep-\nresenting such high-velocity data. For instance, some tools and technologies allow pro-\njection of different structures across data stores, giving room for flexibility for storage \nand access of data in different ways. However, the performance of such platforms may \nnot be suitable for high-velocity data.\n\nData access\n\nThere is a need to put into consideration how the data will be accessed by users and \napplications. For instance, many NoSQL databases require specific application interfaces \nfor data access. Hence there is a need to consider the integration of some other neces-\nsary tools for data access.\n\nAvailability and consistency requirement\n\nIf a distributed system is needed, then CAP theorem states that consistency and avail-\nability cannot be both guaranteed in the presence of network partition (i.e. when there is \na break in the network). In such a scenario, consistency is often traded off for availability \nto ensure that requests can always be processed.\n\nWorkload profile required\n\nPlatform as a service deployment may be appropriate for a spike load profile platform. \nIf platform distribution can be deployed on Infrastructure as a service cloud, then this \noption may be preferred as users will need to pay only when processing. On-premise \n\n\n\nPage 10 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\ndeployment may be considered for predictable or consistent loads. But if workloads are \nmixed (i.e. consistent flows or spikes), a combination of cloud and on-premise approach \nmay be considered so as to give room for easy integration of web-based services or soft-\nware and access to critical functions on the go.\n\nLatency requirement\n\nIf a minimal delay or low latency is required, key-value stores may be considered or bet-\nter still, an in-memory solution which allows the process of large datasets in real-time is \nrequired in order to optimize the data loading procedure.\n\nThe tools and technologies for big data stream analysis can be broadly categorized into \ntwo, which are open source and proprietary solutions. These are listed in Tables 6 and 7.\n\nThe selection of big data streaming tools and technologies should be based on the impor-\ntance of each factor earlier mentioned in this section. Proprietary solutions may not be eas-\nily available because of pricing and licensing issues. While open source supports innovation \nand development at a large scale, careful selection must be made especially when choosing \na recent technology still in production due to limited maturity and lack of support from \nacademic researchers or developer communities. In addition, open source solutions may \nlead to outdating and modification challenges [27]. Moreover, the selection of whether pro-\nprietary or open source or combination of both should depend on the problem to address, \nthe understanding of the true costs, and benefits of both open and proprietary solutions.\n\nTable 6 Open source tools and technologies for big data stream analysis\n\nTools and technology Article\n\nBlockMon [83]\n\nNoSQL [4, 84–86]\n\nSpark streaming [67, 87–91]\n\nApache storm [68, 85, 86, 92–97]\n\nKafka [85, 91, 95, 96, 98]\n\nYahoo! S4 [6, 45, 87, 99]\n\nApache Samza [46, 67, 100]\n\nPhoton [67, 101]\n\nApache Aurora [67, 102]\n\nMavEStream [103]\n\nEsperTech [104, 105]\n\nRedis [106]\n\nC-SPARQL [107, 108]\n\nSAMOA [56, 78, 109]\n\nCQELS [108, 110, 111]\n\nETALIS [112]\n\nXSEQ [73]\n\nApache Kylin [113]\n\nSplunk stream [114]\n\n\n\nPage 11 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nResearch Question 2: What methods and techniques are used in analysing big data \n\nstreams?\n\nGiven the real-time nature, velocity and volume of social media streams, the clus-\ntering algorithms that are applied on streaming data must be highly scalable and \nefficient. Also, the dynamic nature of data makes it difficult to know the required or \ndesirable number of clusters in advance. This renders partitioning clustering tech-\nniques (such as k-median, k-means and k-medoid) or expectation-maximization \n(EM) algorithms-based approaches unsuitable for analysing real-time social media \ndata because they require prior knowledge of clusters in advance. In addition, due \nto concept drift inherent in social media streams, scalable graph partitioning algo-\nrithms are not also suitable because of their tendency towards balanced partitioning. \nSocial media streams must be analysed dynamically in order to provide decisions at \nany given time within a limited space and time window [28–30].\n\nDensity-based clustering algorithm (such as DenStream, OpticStream, Flock-\nStream, Exclusive and Complete Clustering) unlike partitioning algorithms does not \nrequire apriori number of clusters in advance and can detect outliers [31]. However, \nthe issue with density-based clustering algorithms is that most of them except for few \nlike HDDStream, PreDeCon-Stream and PKS-Stream (which are memory intensive) \nperform less efficiently in the face of high dimensional data and as a result are not \nsuitable for analyzing social media streams [32].\n\nThreshold-based techniques, hierarchical clustering, and incremental clustering \nor online clustering are more relevant to social media analysis. Several online thresh-\nold-based stream clustering approaches or incremental clustering approaches such as \nMarkov Random Field [33, 34], Online Spherical K-means [35], and Condensed Clusters \n[36] have been adopted. Incremental approaches are suitable for continuously generated \ndata grouping by setting a maximum similarity threshold between the incoming stream \n\nTable 7 Proprietary tools and technologies for big data stream analysis\n\nTools and technology Article\n\nCodeBlue [115]\n\nAnodot [116]\n\nCloudet [117]\n\nSentiment brand monitoring [118]\n\nNumenta [119]\n\nElastic streaming processing engine [120]\n\nMicrosoft azure stream analytics [121]\n\nIBM InfoSphere streams [8, 122]\n\nGoogle MillWheel [123]\n\nArtemis [124]\n\nWSO2 analytics [125]\n\nMicrosoft StreamInsight [126]\n\nTIBCO StreamBase [127]\n\nStriim [128]\n\nKyvos insights [129]\n\nAtScale [130, 131]\n\nLambda architecture [57]\n\n\n\nPage 12 of 30Kolajo et al. J Big Data            (2019) 6:47 \n\nand the existing clusters. Much work has been done in improving the efficiency of online \nclustering algorithms, however, little research efforts have been directed to threshold \nand fragmentation issues. Incremental algorithm threshold setting should employ adap-\ntive approach instead of relying on static values [37, 38]. Some of the methods and tech-\nniques that have been employed in analysing big data streams are outlined in Table 8.\n\nTable 8 Methods and techniques for big data stream analysis\n\nMethods and techniques Article\n\nSPADE [132]\n\nLocally supervised metric learning (LSML) [133]\n\nKTS [106]\n\nMultinomial latent dirichlet allocation [106]\n\nVoltage clustering algorithm [106]\n\nLocality sensitive hashing (LSH) [134]\n\nUser profile vector update algorithm [134]\n\nTag assignment stream clustering (TASC) [134]\n\nStreamMap [117]\n\nDensity cognition [117]\n\nQRS detection algorithm [87]\n\nForward chaining rule [110]\n\nStream [135]\n\nCluStream [136, 137]\n\nHPClustering [138]\n\nDenStream [139]\n\nD-Stream [140]\n\nACluStream [141]\n\nDCStream [142]\n\nP-Stream [143]\n\nADStream [144]\n\nContinuous query processing (CQR) [145]\n\nFPSPAN-growth [146]\n\nOutlier method for cloud computing algorithm (OMCA) [147]\n\nMulti-query optimization strategy (MQOS) [148]\n\nParallel K-means clustering [72]\n\nVisibly push down automata (VPA) [73]\n\nIncremental MI outlier detection algorithm (Inc I-MLOF) [149]\n\nAdaptive windowing based online ensemble (AWOE) [74]\n\nDynamic prime-number based security verification [84]\n\nK-anonymity, I-diversity, t-closeness [90]\n\nSingular spectrum matrix completion (SS-MC) [76]\n\nTemporal fuzzy concept analysis [96]\n\nECM-sketch [77]\n\nNearest neighbour [91]\n\nMarkov chains [91]\n\nBlock-QuickSort-AdjacentJobMatch [86]\n\nBlock-QuickSort-OverlapReplicate ",
+      "metadata_storage_content_type": "application/pdf",
+      "metadata_storage_size": 1344318,
+      "metadata_storage_last_modified": "2023-02-23T03:38:03Z",
+      "metadata_storage_content_md5": "DecMA2kPYX0/u29qxMWHQw==",
+      "metadata_storage_name": "s40537-019-0210-7.pdf",
+      "metadata_storage_path": "aHR0cHM6Ly9zdG9yYWdlY2NvcnAuYmxvYi5jb3JlLndpbmRvd3MubmV0L3BhcGVycy9zNDA1MzctMDE5LTAyMTAtNy5wZGY1",
+      "metadata_storage_file_extension": ".pdf",
+      "metadata_content_type": "application/pdf",
+      "metadata_language": "en",
+      "metadata_author": "Taiwo Kolajo ",
+      "metadata_title": "Big data stream analysis: a systematic literature review",
+      "metadata_creation_date": "2019-06-04T14:40:29Z",
+      "people": [
+        "Taiwo Kolajo"
+      ],
+      "organizations": [],
+      "locations": [],
+      "masked_text": "************ ",
+      "pii_entities": [
+        {
+          "text": "Taiwo Kolajo",
+          "type": "Person",
+          "subtype": null,
+          "offset": 0,
+          "length": 12,
+          "score": 0.88
+        }
+      ]
+    }
+  ]
+}
+----------------------------------------------------

@@ -1,0 +1,85 @@
+{
+  "@odata.context": "https://cg-search-service.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DB1778B24B52FC\"",
+  "name": "libraryblob-skillset",
+  "description": "Skillset created from the portal. skillsetName: libraryblob-skillset; contentField: metadata_author; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/metadata_author",
+      "categories": [
+        "Email",
+        "Organization",
+        "URL",
+        "Address",
+        "PersonType",
+        "Event",
+        "Quantity",
+        "Skill",
+        "DateTime",
+        "Location",
+        "PhoneNumber",
+        "Product",
+        "Person",
+        "IPAddress"
+      ],
+      "defaultLanguageCode": "en",
+      "minimumPrecision": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/metadata_author"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "persons",
+          "targetName": "people"
+        },
+        {
+          "name": "organizations",
+          "targetName": "organizations"
+        },
+        {
+          "name": "locations",
+          "targetName": "locations"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#Microsoft.Skills.Text.PIIDetectionSkill",
+      "name": "#2",
+      "description": null,
+      "context": "/document/metadata_author",
+      "defaultLanguageCode": "en",
+      "minimumPrecision": 0.5,
+      "maskingMode": "replace",
+      "maskingCharacter": "*",
+      "modelVersion": null,
+      "piiCategories": [],
+      "domain": "none",
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/metadata_author"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "piiEntities",
+          "targetName": "pii_entities"
+        },
+        {
+          "name": "maskedText",
+          "targetName": "masked_text"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": null,
+  "knowledgeStore": null,
+  "encryptionKey": null
+}
