@@ -6,6 +6,7 @@
       "command": "dotnet",
       "args": [
         "clean",
+        "${workspaceFolder}/starter/Function/LookupFunction.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -17,6 +18,7 @@
       "command": "dotnet",
       "args": [
         "build",
+        "${workspaceFolder}/starter/Function/LookupFunction.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -48,6 +50,7 @@
         "publish",
         "--configuration",
         "Release",
+        "${workspaceFolder}/starter/Function/LookupFunction.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -59,7 +62,7 @@
       "type": "func",
       "dependsOn": "build",
       "options": {
-        "cwd": "${workspaceFolder}/bin/Debug/netcoreapp3.1"
+        "cwd": "${workspaceFolder}/starter/Function/bin/Debug/netcoreapp3.1"
       },
       "command": "host start",
       "isBackground": true,
