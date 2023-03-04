@@ -1,0 +1,168 @@
+{
+    "@odata.context": "https://cg-search-service.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DB1BAC7B3B79E6\"",
+    "name": "coursestable-skillset",
+    "description": "Skillset created from the portal. skillsetName: coursestable-skillset; contentField: instructor; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/instructor",
+        "categories": [
+          "Email",
+          "Organization",
+          "URL",
+          "Address",
+          "PersonType",
+          "Event",
+          "Quantity",
+          "Skill",
+          "DateTime",
+          "Location",
+          "PhoneNumber",
+          "Product",
+          "Person",
+          "IPAddress"
+        ],
+        "defaultLanguageCode": "en",
+        "minimumPrecision": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/instructor"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "persons",
+            "targetName": "people"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#2",
+        "description": null,
+        "context": "/document/instructor",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/instructor"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "keyphrases"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Text.CustomEntityLookupSkill",
+        "name": "#3",
+        "description": null,
+        "context": "/document",
+        "defaultLanguageCode": "en",
+        "entitiesDefinitionUri": null,
+        "globalDefaultCaseSensitive": true,
+        "globalDefaultAccentSensitive": true,
+        "globalDefaultFuzzyEditDistance": 0,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/instructor"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "entities",
+            "targetName": "entities"
+          }
+        ],
+        "inlineEntitiesDefinition": [
+          {
+            "name": "Mike Montoya",
+            "description": "Mike  is our HR trainer responsible for helping employees be successful in their careers at our company.  He has been with us for 3 years. Mike is an amateur chef and enjoys outdoor live music events.",
+            "type": null,
+            "subtype": null,
+            "id": null,
+            "caseSensitive": false,
+            "accentSensitive": false,
+            "fuzzyEditDistance": 0,
+            "defaultCaseSensitive": false,
+            "defaultAccentSensitive": false,
+            "defaultFuzzyEditDistance": 0,
+            "aliases": []
+          },
+          {
+            "name": "Claudia Blackman",
+            "description": "Claudia is our senior DevOps engineer. She is charged with overseeing our DevOps operations and has been with the company for 2 years. Claudia enjoys downhill skiing and is a member of the local Search & Rescue Team.",
+            "type": null,
+            "subtype": null,
+            "id": null,
+            "caseSensitive": false,
+            "accentSensitive": false,
+            "fuzzyEditDistance": 0,
+            "defaultCaseSensitive": false,
+            "defaultAccentSensitive": false,
+            "defaultFuzzyEditDistance": 0,
+            "aliases": []
+          },
+          {
+            "name": "Robert Gillis",
+            "description": "Robert is our GIS specialist in charge of making beautiful maps for our users. He has been with the company for 8 years and enjoys hiking, fishing, and any other outdoor activity.",
+            "type": null,
+            "subtype": null,
+            "id": null,
+            "caseSensitive": false,
+            "accentSensitive": true,
+            "fuzzyEditDistance": 0,
+            "defaultCaseSensitive": false,
+            "defaultAccentSensitive": false,
+            "defaultFuzzyEditDistance": 0,
+            "aliases": []
+          },
+          {
+            "name": "Gerald Dominguez",
+            "description": "Gerald is a Junior IT Administrator and has been with the company for 1 year. Gerald played NCAA soccer and is a part-time soccer coach on weekends. ",
+            "type": null,
+            "subtype": null,
+            "id": null,
+            "caseSensitive": false,
+            "accentSensitive": false,
+            "fuzzyEditDistance": 0,
+            "defaultCaseSensitive": false,
+            "defaultAccentSensitive": false,
+            "defaultFuzzyEditDistance": 0,
+            "aliases": []
+          },
+          {
+            "name": "Eileen Diaz",
+            "description": "Eileen is our Senior Security Engineer responsible for application and service security. She has been with the company for 9 years and enjoys writing Sci-Fi in her spare time.",
+            "type": null,
+            "subtype": null,
+            "id": null,
+            "caseSensitive": false,
+            "accentSensitive": false,
+            "fuzzyEditDistance": 0,
+            "defaultCaseSensitive": false,
+            "defaultAccentSensitive": false,
+            "defaultFuzzyEditDistance": 0,
+            "aliases": []
+          }
+        ]
+      }
+    ],
+    "cognitiveServices": {
+      "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+      "description": "/subscriptions/1d697ec8-0d3c-4a0f-b9b2-a422ba575a26/resourceGroups/rg-corporate-training-catalog/providers/Microsoft.CognitiveServices/accounts/cog-service-corp",
+      "key": "a6607f7d119a47bd88761e651aa9fabc"
+    },
+    "knowledgeStore": null,
+    "encryptionKey": null
+  }
